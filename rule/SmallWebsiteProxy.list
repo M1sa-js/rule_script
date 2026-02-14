@@ -1,3 +1,4 @@
+# Suggestion: It is recommended to use encrypted DNS, such as DoH or DoT. The following rules exist because DNS hijacking causes domain IPs to be matched to GeoIP CN; using encrypted DNS will prevent hijacking.
 domain-suffix, tagss.pro
 domain, faka.nvidia.rip
 domain-keyword, agoda
