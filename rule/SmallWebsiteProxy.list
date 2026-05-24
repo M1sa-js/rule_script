@@ -1,15 +1,23 @@
 # Suggestion: It is recommended to use encrypted DNS, such as DoH or DoT. The following rules exist because DNS hijacking causes domain IPs to be matched to GeoIP CN; using encrypted DNS will prevent hijacking.
-domain-suffix, tagss.pro
+# for nvidia driver website
 domain, faka.nvidia.rip
+domain-suffix, wiki.nvidia.rip
+# for travel website
 domain-keyword, agoda
+# for novel website
 domain-suffix, webnovel.com
+# for anime website
 domain-suffix, anitabi.cn
+# for proxy website
 domain-suffix, mojie.kim
 domain-suffix, bajie.la
-domain-suffix, www.subtitlecat.com
-domain-suffix, wiki.nvidia.rip
-domain-suffix, laowangfip372.vip
+# for movie website
 domain-keyword, missav
+# for subtitle website
+domain-suffix, www.subtitlecat.com
+# for forum website
+domain-suffix, laowangfip372.vip
+# for other website
 domain-suffix, msg-ws.salesmartly.com
 domain-suffix, my.paofu.io
 domain-suffix, gitcode.com
