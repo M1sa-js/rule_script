@@ -20,6 +20,11 @@ if (ua.includes('Easydict') && $request.body) {
         };
         body.include_reasoning = false;
         body.reasoning_format = "none";
+        
+        // 忽略 Cloudflare 和百度的提供商
+        body.provider = {
+            "ignore": ["cloudflare", "baidu/fp8"]
+        };
 
         $done({ body: JSON.stringify(body) });
     } catch (e) {
