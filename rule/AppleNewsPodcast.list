@@ -1,0 +1,31 @@
+# --- Apple News ---
+# 核心 API 与边缘节点
+domain-suffix,news-client.apple.com,AppleNews
+domain-suffix,news-edge.apple.com,AppleNews
+domain-suffix,news-events.apple.com,AppleNews
+domain-suffix,news-assets.apple.com,AppleNews
+domain-suffix,news-client-search.apple.com,AppleNews
+domain-suffix,news.iadsdk.apple.com,AppleNews
+
+# 专属域名后缀
+domain-suffix,apple.news,AppleNews
+domain-suffix,applenewsformat.com,AppleNews
+
+# 专属 User-Agent
+USER-AGENT,AppleNews*,AppleNews
+USER-AGENT,com.apple.news*,AppleNews
+
+
+# --- Apple Podcasts ---
+# 专属域名与 API
+domain-suffix,podcasts.apple.com,ApplePodcasts
+domain-suffix,amp-api.podcasts.apple.com,ApplePodcasts
+domain-suffix,pcast.apple.com,ApplePodcasts
+
+# 播放进度同步 (注意: 该域名同时也负责 Apple Books 图书的进度同步)
+domain-suffix,bookkeeper.itunes.apple.com,ApplePodcasts
+
+# 专属 User-Agent
+USER-AGENT,podcasts*,ApplePodcasts
+USER-AGENT,*Podcasts*,ApplePodcasts
+USER-AGENT,com.apple.podcasts*,ApplePodcasts
