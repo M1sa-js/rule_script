@@ -3,7 +3,7 @@
  * @description 过滤推广, 关 NSFW 提示 (合并版)
  *
  * [rewrite_local]
- * ^https?:\/\/gql(-fed)?\.reddit\.com\/ url script-response-body Reddit_AdBlock.js
+ * ^https?:\/\/gql(-fed)?\.reddit\.com\/ url script-response-body https://raw.githubusercontent.com/M1sa-js/rule_script/refs/heads/main/rewrite/reddit_remove_ad.js
  *
  * [mitm]
  * hostname = gql.reddit.com, gql-fed.reddit.com
