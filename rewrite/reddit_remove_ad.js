@@ -1,13 +1,11 @@
-/**
- * @name Reddit 去广告 & 解除 NSFW
- * @description 过滤推广, 关 NSFW 提示 (合并版)
- *
- * [rewrite_local]
- * ^https?:\/\/gql(-fed)?\.reddit\.com\/ url script-response-body https://raw.githubusercontent.com/M1sa-js/rule_script/refs/heads/main/rewrite/reddit_remove_ad.js
- *
- * [mitm]
- * hostname = gql.reddit.com, gql-fed.reddit.com
- */
+/*
+[rewrite_local]
+# Reddit 去广告 & 解除 NSFW
+^https?:\/\/gql(-fed)?\.reddit\.com\/ url script-response-body https://raw.githubusercontent.com/M1sa-js/rule_script/refs/heads/main/rewrite/reddit_remove_ad.js
+
+[mitm]
+hostname = gql.reddit.com, gql-fed.reddit.com
+*/
 
 let body = $response.body;
 
@@ -71,8 +69,8 @@ if (body) {
         walk(obj);
         $done({ body: JSON.stringify(obj) });
     } catch (e) {
-        // 若解析失败直接返回原数据，避免 App 产生断网错误
-        $done({ body: body });
+        console.log("Reddit JSON 解析异常: " + e);
+        $done({});
     }
 } else {
     $done({});
