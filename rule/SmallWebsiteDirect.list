@@ -4,8 +4,8 @@ domain-suffix, tv1.micu.hk
 domain-suffix, tv.micu.hk
 domain-suffix, tv1.micu.hk
 # for tag website
-domain-suffix, siamparagon.org,  direct
-domain-suffix, dedicated-afflink.com, direct
+domain-suffix, siamparagon.org
+domain-suffix, dedicated-afflink.com
 domain-suffix, tagss13.pro
 domain-suffix, tagss.pro
 # for mesl website
